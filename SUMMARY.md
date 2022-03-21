@@ -2,3 +2,4 @@
 
 * [Overview](README.md)
 * [Introduction](introduction.md)
+* [Recurrences](recurrences.md)
