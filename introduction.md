@@ -35,8 +35,12 @@ $$n! = \Theta(e^{n log(n)})$$
 
 ## Comparison Tree
 
+Example: Merge $$x_1 < x_2$$ and $$y_1 < y_2 < y_3 < y_4$$.
+
 ![Decision Tree Example](.gitbook/assets/decision-tree.png)
 
 ### Hasse Diagram
+
+The lower the smaller, circle(o) for x, cross(×) for y.
 
 ![Hasse Diagram Example](.gitbook/assets/hasse-diagram.png)
