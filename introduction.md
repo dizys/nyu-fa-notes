@@ -16,3 +16,13 @@ description: >-
 | small-omega | $$g=\omega(f)$$ | $$g \gg f$$   | $$(\forall C > 0)[C g \ge f \ge 0(e.v.)]$$     | $$g \gg f$$     |
 
 ![Asymptotics Notations](.gitbook/assets/aymptotics-table.png)
+
+## Stirling's Approximation
+
+Original:
+
+$$log(n!) = n log(n) - n + \Theta(log(n))$$
+
+Further simplification:
+
+$$log(n!) = \Theta(n log(n))$$
