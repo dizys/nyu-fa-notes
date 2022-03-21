@@ -21,6 +21,8 @@ description: >-
 
 Original:
 
+$$\sqrt{2\pi n}({n \over e})^n e^{1\over{12n + 1}} < n! < \sqrt{2\pi n}({n \over e})^n e^{1\over{12n}} $$
+
 $$log(n!) = n log(n) - n + \Theta(log(n))$$
 
 Further simplification:
