@@ -32,3 +32,7 @@ $$log(n!) = \Theta(n log(n))$$
 A possible transformation:
 
 $$n! = \Theta(e^{n log(n)})$$
+
+## Comparison Tree
+
+### Hasse Diagram
