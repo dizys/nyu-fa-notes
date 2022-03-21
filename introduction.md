@@ -26,3 +26,7 @@ $$log(n!) = n log(n) - n + \Theta(log(n))$$
 Further simplification:
 
 $$log(n!) = \Theta(n log(n))$$
+
+A possible transformation:
+
+$$n! = \Theta(e^{n log(n)})$$
