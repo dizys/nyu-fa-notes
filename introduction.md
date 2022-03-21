@@ -35,4 +35,8 @@ $$n! = \Theta(e^{n log(n)})$$
 
 ## Comparison Tree
 
+![Decision Tree Example](.gitbook/assets/decision-tree.png)
+
 ### Hasse Diagram
+
+![Hasse Diagram Example](.gitbook/assets/hasse-diagram.png)
