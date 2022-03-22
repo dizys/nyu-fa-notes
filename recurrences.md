@@ -46,40 +46,40 @@ $$T(n) = 2T(n/2) + n$$
 
 1. Expand:
 
-$$
-\begin{align*}
-T(n) &= 2T(n/2) + n \\
-&= 2 (2 T(n/4) + (n/2)) + n \\
-&= 4 T(n/4) + 2n \\
-&= 4 (2T(n/8) + (n/4)) + 2n \\
-&= 8T(n/8) + 3n \\
-&= \dots
-\end{align*}
-$$
+   $$
+   \begin{align*}
+   T(n) &= 2T(n/2) + n \\
+   &= 2 (2 T(n/4) + (n/2)) + n \\
+   &= 4 T(n/4) + 2n \\
+   &= 4 (2T(n/8) + (n/4)) + 2n \\
+   &= 8T(n/8) + 3n \\
+   &= \dots
+   \end{align*}
+   $$
 
 2. Guess:
 
-$$ T(n) = 2^i T({n\over{2^i}}) + i n$$
+   $$ T(n) = 2^i T({n\over{2^i}}) + i n$$
 
 3. Verify: (use natural induction)
 
-Base case: $$T(n)_{i=1} = 2T(n/2) + n$$ holds
+   Base case: $$T(n)_{i=1} = 2T(n/2) + n$$ holds
 
-Inductive step: Assume $$T(n)_{i=k}$$ holds, the goal is to prove
-$$T(n)_{i=k+1}$$ also holds.
+   Inductive step: Assume $$T(n)_{i=k}$$ holds, the goal is to prove
+   $$T(n)_{i=k+1}$$ also holds.
 
-$$
-\begin{align*}
-T(n) &= 2^k T({n\over{2^k}}) + k n \\
-&= 2^k (2 T({n\over{2^{k+1}}}) + {n\over{2^k}}) + k n \\
-&= 2^{k+1} T(n/2^{k+1}) + （k+1) n
-\end{align*}
-$$
+   $$
+   \begin{align*}
+   T(n) &= 2^k T({n\over{2^k}}) + k n \\
+   &= 2^k (2 T({n\over{2^{k+1}}}) + {n\over{2^k}}) + k n \\
+   &= 2^{k+1} T(n/2^{k+1}) + （k+1) n
+   \end{align*}
+   $$
 
-Therefore, this proves $$T(n)_{i=k+1}$$ also holds.
+   Therefore, this proves $$T(n)_{i=k+1}$$ also holds.
 
-Combining the base case and the inductive step we verified that $$ T(n) = 2^i
-T({n\over{2^i}}) + i n$$.
+   Combining the base case and the inductive step we verified that $$ T(n) = 2^i
+   T({n\over{2^i}}) + i n$$.
 
 ### Basic Sums
 
