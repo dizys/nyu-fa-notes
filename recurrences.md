@@ -272,7 +272,7 @@ Examples:
 
 {% hint style="info" %}
 
-Related homework questions: h3-Q3
+Related homework questions: h3-Q3 and h3-Q4(combining range transformation)
 
 {% endhint %}
 
@@ -324,8 +324,49 @@ descending sum to the ascending sum.
 
 {% endhint %}
 
+### Range Transformation
+
+{% hint style="info" %}
+
+Related homework questions: h3-Q4(combining domain transformation)
+
+{% endhint %}
+
+Example:
+
+$$
+\begin{gather*}
+T(n) = 2T(n-1) + n
+\end{gather*}
+$$
+
+We define $$t(n) := {T(n)\over{2^n}}$$, then divide the both sides of the
+original equation by $$2^n$$.
+
+$$
+\begin{align*}
+{T(n)\over{2^n}} &= 2{T(n-1)\over{2^n}} + {n\over{2^n}} \\
+{T(n)\over{2^n}} &= {T(n-1)\over{2^{n-1}}} + {n\over{2^n}} \\
+t(n) &= t(n-1) + {n\over{2^n}}
+\end{align*}
+$$
+
+We get this standard form. By DIC, we choose the boundary condition $$t(n) = 0$$
+for all $$n \le 0$$.
+
+We get sum: ($$\sum^n_{i\ge{0}}{n\over{2^n}}$$ is exponentially decreasing)
+
+$$
+\begin{gather*}
+t(n) = \sum^n_{i\ge{0}}{n\over{2^n}}=\Theta(1)
+\end{gather*}
+$$
+
 ## Master Theorem
 
 ## Multi-term Master Recurrences
 
 ## Real Induction
+
+$$
+$$
