@@ -124,32 +124,49 @@ $$H_n := 1 + {1\over{2}} + {1\over{3}} + \dots + {1\over{n}}$$
 
 Solution: $$H_n = ln(n) + g(n)$$ where $$0 < g(n) < 1$$.
 
-## Master Theorem
-
 ## Summation Techniques
 
 ### Growth Types
 
+{% hint style="info" %}
+
+Related homework questions: h3-Q1
+
+{% endhint %}
+
+#### Polynomial Type
+
+A real function $$f$$ is **polynomial-type** if $$f$$ is non-decreasing (ev.)
+and there is some $$C > 1$$ such that:
+
+$$f(x) \le C f(x/2)\ (ev.)$$
+
+#### Increasing Exponential Type
+
+$$f$$ increases exponentially if there exists real numbers $$C > 1$$ and
+$$k > 0$$ such that:
+
+$$f(x) \ge C f(x - k)\ (ev.)$$
+
+#### Decreasing Exponential Type
+
+$$f$$ decreases exponentially if there exists real numbers $$C > 1$$ and
+$$k > 0$$ such that:
+
+$$f(x) \le f(x - k) / C\ (ev.)$$
+
 ### Summation Rules by Growth Type
+
+{% hint style="info" %}
+
+Related homework questions: h3-Q2
+
+{% endhint %}
 
 ## Transformation Techniques
 
-## Real Induction
+## Master Theorem
 
 ## Multi-term Master Recurrences
 
-$$
-
-
-$$
-
-$$
-
-
-$$
-
-$$
-$$
-
-$$
-$$
+## Real Induction
