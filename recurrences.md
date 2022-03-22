@@ -233,7 +233,7 @@ Related homework questions: h3-Q2
 
 {% endhint %}
 
-Theorem 6:
+Theorem 6: Summation Rules
 
 $$
 S_f(n) = \Theta
@@ -243,6 +243,26 @@ S_f(n) = \Theta
   1 & \text{if f is decreasing exponentially.}
 \end{cases}
 $$
+
+Examples:
+
+- Polynomial Sums:
+
+  $$
+  \sum^n_{i\ge{1}}{i log(i)} = \Theta(n^2 log(n)), \sum^n_{i\ge{1}}{log(i)} = \Theta(n log(n)), \sum^n_{i\ge{1}}{i^a} = \Theta(n^{a+1})(a\ge{0}).
+  $$
+
+- Exponentially Increasing Sums:
+
+  $$
+  \sum^n_{i\ge{1}}{b^i} = \Theta(b^n)(b\ge{0}), \sum^n_{i\ge{1}}{i^{-5}2^{2^i}} = \Theta(n^{-5}2^{2^n}), \sum^n_{i\ge{1}}{i!} = \Theta(n!).
+  $$
+
+- Exponentially Decreasing Sums:
+
+  $$
+  \sum^n_{i\ge{1}}{b^{-i}} = \Theta(1)(b\ge{0}), \sum^n_{i\ge{1}}{i^2 i^{-i}} = \Theta(1), \sum^n_{i\ge{1}}{i^{-i}} = \Theta(1).
+  $$
 
 ## Transformation Techniques
 
