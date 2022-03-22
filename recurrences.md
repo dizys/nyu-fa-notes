@@ -15,9 +15,9 @@ $$n_i (i=1,...,k)$$ is a function of $$n$$ that is strictly less than $$n$$.
 **Fibonacci sequence** is defined by the recurrence relation:
 
 $$
-\begin{align*}
+\begin{gather*}
 F(n) = F(n-1) + F(n-2)
-\end{align*}
+\end{gather*}
 $$
 
 For this, we have $$k=2, n_1=n-1, n_2=n-2$$
