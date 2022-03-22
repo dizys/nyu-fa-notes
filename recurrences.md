@@ -36,6 +36,24 @@ Related homework questions: h2-Q7
 
 {% endhint %}
 
+### EGVS method
+
+4 stages: **E**xpand, **G**uess, **V**erify and **S**top-and-Sum.
+
+Example: $$T(n/2) = 2T(n/4) + n/2$$
+
+Expand:
+
+$$
+\begin{aligned}
+T(n/2) = 2T(n/4) + (n/2) \\
+= 2 (2 T(n/4) + (n/2)) + n \\
+= 4 T(n/4) + 2n \\
+= 4 (2T(n/8) + (n/4)) + 2n \\
+= 8T(n/8) + 3n \\
+\end{aligned}
+$$
+
 ### Basic Sums
 
 ## Master Theorem
