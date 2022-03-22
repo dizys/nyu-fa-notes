@@ -102,7 +102,7 @@ $$T(n) = 2T(n/2) + n$$
 
 4. Stop:
 
-   We can pick $$i = \lfloor {lg n} \rfloor$$ for stopping, then
+   We can pick $$i = \lfloor {\lg n} \rfloor$$ for stopping, then
    $$0 < {n\over{2^i}} \le 2$$.
 
    By DIC, choose $$T(n) = 0$$ for all $$n \le 2$$.
@@ -111,7 +111,7 @@ $$T(n) = 2T(n/2) + n$$
 
    $$
    \begin{gather*}
-   T(n) = \lfloor {lg n} \rfloor n
+   T(n) = \lfloor {\lg n} \rfloor n
    \end{gather*}
    $$
 
@@ -216,8 +216,8 @@ multiplication, and raising to any power $$a$$. In case $$a > 0$$, the function
 $$f^a$$ will not change its subtype (increasing or decreasing). In case
 $$a < 0$$, the function $$f^a$$ will change its subtype.
 
-(c) If $$f$$ is polynomial-type and $$lg f$$ is non-decreasing then $$lg f$$ is
-also polynomial-type. If $$f$$ is exponential-type and $$a > 1$$ then so is
+(c) If $$f$$ is polynomial-type and $$\lg f$$ is non-decreasing then $$\lg f$$
+is also polynomial-type. If $$f$$ is exponential-type and $$a > 1$$ then so is
 $$a ^ f$$.
 
 ### Summation Rules by Growth Type
@@ -304,7 +304,7 @@ t(n) = \sum^n_{i\ge{0}}{2^n}=\Theta(2^n)
 \end{gather*}
 $$
 
-Because we have $$n = lgN$$,
+Because we have $$n = \lg N$$,
 
 $$
 \begin{gather*}

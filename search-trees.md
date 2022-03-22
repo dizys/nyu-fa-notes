@@ -14,6 +14,35 @@ The size of $$T$$ is $$|N|$$.
 Every level of the tree is completely filled, except possibly the last level.
 Moreover, the last level has to be filled from left to right.
 
+If a complete binary tree is also complete on the last level, then it is called
+a **perfect** binary tree.
+
+**Height of binary trees**
+
+Minimum number of nodes in a binary tree of height $$h$$:
+
+$$
+\begin{gather*}
+\mu(h) = h + 1
+\end{gather*}
+$$
+
+Maximum number of nodes in a binary tree of height $$h$$:
+
+$$
+\begin{gather*}
+M(h) = 2^{h+1} - 1
+\end{gather*}
+$$
+
+The minimum height of binary trees with $$n$$ nodes:
+
+$$
+\begin{gather*}
+h \ge \lg(n + 1) - 1
+\end{gather*}
+$$
+
 ### Binary Search Tree
 
 A binary tree is a binary search tree if each node $$u \in T$$ has a field
