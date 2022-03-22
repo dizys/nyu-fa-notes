@@ -362,6 +362,16 @@ t(n) = \sum^n_{i\ge{0}}{n\over{2^n}}=\Theta(1)
 \end{gather*}
 $$
 
+Because $$t(n) = {T(n)\over{2^n}}$$,
+
+$$
+\begin{gather*}
+T(N) = \Theta(2^n)
+\end{gather*}
+$$
+
+{% hint style="info" %}
+
 ## Master Theorem
 
 ## Multi-term Master Recurrences
