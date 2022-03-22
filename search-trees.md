@@ -24,3 +24,19 @@ $$
 u_L.key < u.key \le u_R.key
 \end{gather*}
 $$
+
+## AVL Trees
+
+An AVL tree is a binary search tree where the left subtree and right subtree at
+each node differ by at most 1 in height.
+
+### Balance Factor
+
+More generally, define the **balance** of any node $$u$$ of a binary tree to be
+the height of the left subtree minus the height of the right subtree:
+
+$$
+\begin{gather*}
+b(u) = h(u.left) - h(u.right)
+\end{gather*}
+$$
