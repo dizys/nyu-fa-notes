@@ -426,7 +426,7 @@ $$
 T(n) = \Theta
 \begin{cases}
   d(n), & \text{if } a\cdot d(n/b) \le c\cdot d(n) \text{ for some } 0 < c < 1. & CASE(+) \\
-  W(n)\log\logn, & \text{if } d(n) = \Theta(W(n)\log^c(n)) \text{ for } c = -1, & CASE(1) \\
+  W(n)\log\log n, & \text{if } d(n) = \Theta(W(n)\log^c(n)) \text{ for } c = -1, & CASE(1) \\
   W(n)\log^{c+1}(n), & \text{if } d(n) = \Theta(W(n)\log^c(n)) \text{ for } c > -1, & CASE(0) \\
   W(n), & \text{if } d(n) = O(W(n)\log^c(n)) \text{ for } c < -1. & CASE(-) \\
 \end{cases}
