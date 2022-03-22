@@ -432,6 +432,12 @@ $$
 
 ## Multi-term Master Recurrences
 
+{% hint style="info" %}
+
+Related homework questions: h3-Q5
+
+{% endhint %}
+
 $$
 \begin{gather*}
 T(n) = d(n) + \sum_{i=1}^{k}{a_i T(n/b_i)}
