@@ -102,3 +102,23 @@ double-rotation at $$w$$ results in a balanced tree of height $$h+1$$ rooted at
 $$w$$.
 
 ![Figure 17: AVL Insertion: CASE (I.b)](.gitbook/assets/avl-insertion-case-i-b.png)
+
+#### Deletion Rebalancing
+
+CASE (D.a): $$h_L = h$$ and $$h_R = h - 1$$. This is like case (I.a) and treated
+in the same way, namely a single rotation at $$v$$. Now $$u$$ is replaced by
+$$v$$ after this rotation, and the new height of $$v$$ is $$h+1$$. Now $$u$$ is
+AVL balanced. However, since the original height is $$h + 2$$, there may beb
+unbalanced node further up the rebalance path. Thus, this is a non-terminal
+case.
+
+CASE (D.b): $$h_L = h - 1$$ and $$h_R = h$$. This is like case (I.b) and treated
+in the same way, namely a double rotation at $$w$$. Again, this is a
+non-terminal case.
+
+CASE (D.c): $$h_L = h_R = h$$. This case is new, we simply rotate at $$v$$. We
+check that $$v$$ is balanced and has height $$h+2$$. Since $$v$$ is in the place
+of $$u$$ which has height $$h+2$$ originally, we can safely terminate the
+rebalancing process.
+
+![Figure 20: AVL Deletion: CASE (D.c) rotate(v)](.gitbook/assets/avl-deletion-case-d-c.png)
