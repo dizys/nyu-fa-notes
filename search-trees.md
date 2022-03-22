@@ -21,6 +21,6 @@ $$u$$.key that satisfies the BST property:
 
 $$
 \begin{gather*}
-u_L.key \l u.key \le u_R.key
+u_L.key < u.key \le u_R.key
 \end{gather*}
 $$
