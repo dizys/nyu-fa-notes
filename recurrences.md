@@ -401,7 +401,7 @@ $$
 \begin{gather*}
 T(n) = \Theta
 \begin{cases}
-  n^w, & \text{if} d(n) = \O(n^{w-\epsilon}), \text{for some} \epsilon > 0 & CASE(-) \\
+  n^w, & \text{if} d(n) = O(n^{w-\epsilon}), \text{for some} \epsilon > 0 & CASE(-) \\
   n^w log(n), & \text{if} d(n) = \Theta(n^w), & CASE(0) \\
   d(n), & \text{if} a d(n/b) \le cd(n) \text{for some} 0 < c < 1. & CASE(+) \\
 \end{cases}
