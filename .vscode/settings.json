@@ -7,5 +7,12 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "cSpell.words": ["Algorithmics", "Asymptotics", "gitbook", "Hasse"]
+  "cSpell.words": [
+    "Algorithmics",
+    "Asymptotics",
+    "gitbook",
+    "Hasse",
+    "REBALANCE",
+    "rebalancing"
+  ]
 }

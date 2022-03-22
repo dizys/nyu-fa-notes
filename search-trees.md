@@ -69,3 +69,12 @@ $$
 b(u) = h(u.left) - h(u.right)
 \end{gather*}
 $$
+
+### Insertion and Deletion Algorithms
+
+**UPDATE PHASE**: Insert or delete as we would in a binary search tree.
+
+**REBALANCE PHASE**: Let $$x$$ be parent of the node that was just inserted, or
+just cut during deletion, in the UPDATE PHASE. THe path from $$x$$ to the root
+will be called the **rebalance path**. We now move up this path, rebalancing
+nodes along this path as necessary.
