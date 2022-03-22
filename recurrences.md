@@ -366,7 +366,7 @@ Because $$t(n) = {T(n)\over{2^n}}$$,
 
 $$
 \begin{gather*}
-T(N) = \Theta(2^n)
+T(n) = \Theta(2^n)
 \end{gather*}
 $$
 
@@ -374,9 +374,48 @@ $$
 
 ## Master Theorem
 
+**Master recurrence:**
+
+$$
+\begin{gather*}
+T(n) = a T(n/b) + d(n)
+\end{gather*}
+$$
+
+where $$a > 0$$, $$b > 0$$ are real constants and $$d(n)$$ the driving/forcing
+function.
+
+**Watershed constant**
+
+$$w = log_b(a)$$
+
+**Watershed function**
+
+$$f_w = n^w = n^{log_b(a)}$$
+
+### Master Theorem
+
+Theorem 10: Master Theorem on Lecture II Page 51, L1207
+
+$$
+\begin{gather*}
+T(n) = \Theta
+\begin{cases}
+  n^w, & \text{if} d(n) = \O(n^{w-\epsilon}), \text{for some} \epsilon > 0 & CASE(-) \\
+  n^w log(n), & \text{if} d(n) = \Theta(n^w), & CASE(0) \\
+  d(n), & \text{if} a d(n/b) \le cd(n) \text{for some} 0 < c < 1. & CASE(+) \\
+\end{cases}
+\end{gather*}
+$$
+
 ## Multi-term Master Recurrences
 
 ## Real Induction
+
+$$
+
+
+$$
 
 $$
 $$
