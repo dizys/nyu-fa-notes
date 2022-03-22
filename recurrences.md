@@ -10,7 +10,7 @@ Separable form for recurrence relation:
 $$T(n) = G(n, T(n_1), ..., T(n_k))$$
 
 where $$G(x_0, x_1, ..., x_k)$$ is a function in $$k+1$$ variables and each
-$$n_i (i=1,...,k)$$ is a function of $n$ that is strictly less than $n$.
+$$n_i (i=1,...,k)$$ is a function of $$n$$ that is strictly less than $$n$$.
 
 **Fibonacci sequence** is defined by the recurrence relation:
 
