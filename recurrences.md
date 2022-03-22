@@ -94,7 +94,7 @@ $$T(n) = 2T(n/2) + n$$
 
 ### Basic Sums
 
-#### Arithmetic Sums\*\*
+#### Arithmetic Sums
 
 $$S^k_n := \sum^n_{i=1}{i^k}$$
 
@@ -112,7 +112,7 @@ Solution: $$S_\infty = {{x^n - 1}\over{x - 1}}$$
 
 When $$\lvert{x}\rvert < 1$$,
 
-$$S_{\infty}(x) := \Sum^{\infty}_{i=0}{x^i}$$
+$$S_{\infty}(x) := \sum^{\infty}_{i=0}{x^i}$$
 
 Solution: $$S_{\infty}={1\over{1 - x}}$$
 
