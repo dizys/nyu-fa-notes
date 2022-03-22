@@ -5,6 +5,22 @@ description: >-
 
 # Introduction
 
+## Exponent rule
+
+$$
+\begin{gather*}
+(a^b)^c = a^{bc}
+\end{gather*}
+$$
+
+## Log rule
+
+$$
+\begin{gather*}
+c^{\log_a(n)} = n^{\log_a(c)}
+\end{gather*}
+$$
+
 ## Asymptotics
 
 | Name        | Notation        | Rough Meaning | Definition                                     | In-fix Notation |
@@ -23,15 +39,15 @@ Original:
 
 $$\sqrt{2\pi n}({n \over e})^n e^{1\over{12n + 1}} < n! < \sqrt{2\pi n}({n \over e})^n e^{1\over{12n}} $$
 
-$$log(n!) = n log(n) - n + \Theta(log(n))$$
+$$log(n!) = n \log(n) - n + \Theta(\log(n))$$
 
 Further simplification:
 
-$$log(n!) = \Theta(n log(n))$$
+$$log(n!) = \Theta(n \log(n))$$
 
 A possible transformation:
 
-$$n! = \Theta(e^{n log(n)})$$
+$$n! = \Theta(e^{n \log(n)})$$
 
 ## Comparison Tree
 
@@ -44,3 +60,6 @@ Example: Merge $$x_1 < x_2$$ and $$y_1 < y_2 < y_3 < y_4$$.
 The lower the smaller, circle(o) for x, cross(×) for y.
 
 ![Hasse Diagram Example](.gitbook/assets/hasse-diagram.png)
+
+$$
+$$

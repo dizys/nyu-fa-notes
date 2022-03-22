@@ -249,7 +249,7 @@ Examples:
 - Polynomial Sums:
 
   $$
-  \sum^n_{i\ge{1}}{i log(i)} = \Theta(n^2 log(n)), \sum^n_{i\ge{1}}{log(i)} = \Theta(n log(n)), \sum^n_{i\ge{1}}{i^a} = \Theta(n^{a+1})(a\ge{0}).
+  \sum^n_{i\ge{1}}{i \log(i)} = \Theta(n^2 \log(n)), \sum^n_{i\ge{1}}{\log(i)} = \Theta(n \log(n)), \sum^n_{i\ge{1}}{i^a} = \Theta(n^{a+1})(a\ge{0}).
   $$
 
 - Exponentially Increasing Sums:
@@ -393,11 +393,11 @@ function.
 
 **Watershed constant**
 
-$$w = log_b(a)$$
+$$w = \log_b(a)$$
 
 **Watershed function**
 
-$$W(n) = n^w = n^{log_b(a)}$$
+$$W(n) = n^w = n^{\log_b(a)}$$
 
 > Useful link:
 > [Online basic master theorem solver](https://www.nayuki.io/page/master-theorem-solver-javascript)
@@ -411,7 +411,7 @@ $$
 T(n) = \Theta
 \begin{cases}
   n^w, & \text{if } d(n) = O(n^{w-\epsilon}) \text{ for some } \epsilon > 0, & CASE(-) \\
-  n^w log(n), & \text{if } d(n) = \Theta(n^w), & CASE(0) \\
+  n^w \log(n), & \text{if } d(n) = \Theta(n^w), & CASE(0) \\
   d(n), & \text{if } a\cdot d(n/b) \le c\cdot d(n) \text{ for some } 0 < c < 1. & CASE(+) \\
 \end{cases}
 \end{gather*}
@@ -426,9 +426,9 @@ $$
 T(n) = \Theta
 \begin{cases}
   d(n), & \text{if } a\cdot d(n/b) \le c\cdot d(n) \text{ for some } 0 < c < 1. & CASE(+) \\
-  W(n)loglogn, & \text{if } d(n) = \Theta(W(n)log^c(n)) \text{ for } c = -1, & CASE(1) \\
-  W(n)log^{c+1}(n), & \text{if } d(n) = \Theta(W(n)log^c(n)) \text{ for } c > -1, & CASE(0) \\
-  W(n), & \text{if } d(n) = O(W(n)log^c(n)) \text{ for } c < -1. & CASE(-) \\
+  W(n)\log\logn, & \text{if } d(n) = \Theta(W(n)\log^c(n)) \text{ for } c = -1, & CASE(1) \\
+  W(n)\log^{c+1}(n), & \text{if } d(n) = \Theta(W(n)\log^c(n)) \text{ for } c > -1, & CASE(0) \\
+  W(n), & \text{if } d(n) = O(W(n)\log^c(n)) \text{ for } c < -1. & CASE(-) \\
 \end{cases}
 \end{gather*}
 $$
