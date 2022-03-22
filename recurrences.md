@@ -1,8 +1,3 @@
----
-description: >-
-  Outline of Algorithmics
----
-
 # Recurrences
 
 Separable form for recurrence relation:
