@@ -207,3 +207,11 @@ Rebalance-Step(u)
   else
     Return(u)
 ```
+
+## Generalized B-Trees: (2,3)-trees
+
+{% hint style="info" %}
+
+Related homework questions: h4-1, h4-2
+
+{% endhint %}
