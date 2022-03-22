@@ -94,6 +94,8 @@ $$T(n) = 2T(n/2) + n$$
 
 ### Basic Sums
 
+Other kinds of sums are often reduces to the following forms.
+
 #### Arithmetic Sums
 
 $$S^k_n := \sum^n_{i=1}{i^k}$$
@@ -115,6 +117,12 @@ When $$\lvert{x}\rvert < 1$$,
 $$S_{\infty}(x) := \sum^{\infty}_{i=0}{x^i}$$
 
 Solution: $$S_{\infty}={1\over{1 - x}}$$
+
+#### Harmonic Series
+
+$$H_n := 1 + {1\over{2}} + {1\over{3}} + \dots + {1\over{n}}$$
+
+Solution: $$H_n = ln(n) + g(n)$$ where $$0 < g(n) < 1$$.
 
 ## Master Theorem
 
