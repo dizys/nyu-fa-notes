@@ -5,6 +5,11 @@
 | Professor   | Chee Yap         |
 | Email       | yap@cs.nyu.edu   |
 
+# Useful links
+
+- [Symbolab Online Math Solver](https://www.symbolab.com/)
+- [Online basic master theorem solver](https://www.nayuki.io/page/master-theorem-solver-javascript)
+
 ## Grading
 
 10 Homework assignments (1 per week). A midterm exam and a final project.
