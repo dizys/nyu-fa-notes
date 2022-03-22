@@ -94,7 +94,27 @@ $$T(n) = 2T(n/2) + n$$
 
 ### Basic Sums
 
+#### Arithmetic Sums\*\*
 
+$$S^k_n := \sum^n_{i=1}{i^k}$$
+
+Solution: $$S^k_n = \Theta(n^{k+1})$$
+
+#### Geometric Sums
+
+When $$x \ne 1$$,
+
+$$S_n(x) := \sum^{n-1}_{i=0}{x^i}$$
+
+Solution: $$S_\infty = {{x^n - 1}\over{x - 1}}$$
+
+#### Infinite Geometric Series
+
+When $$\lvert{x}\rvert < 1$$,
+
+$$S_{\infty}(x) := \Sum^{\infty}_{i=0}{x^i}$$
+
+Solution: $$S_{\infty}={1\over{1 - x}}$$
 
 ## Master Theorem
 
