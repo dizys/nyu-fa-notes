@@ -200,9 +200,9 @@ Rebalance-Step(u)
       Return(double-rotate(v.right))
   elif (ratio(u) <= 1/3)
     v <- u.right
-    If (ratio(v) <= 3/5)
+    If (ratio(v) >= 3/5)
       Return(rotate(v))
-    Else \\ ratio(v) > 3/5
+    Else \\ ratio(v) < 3/5
       Return(double-rotate(v.left))
   else
     Return(u)
