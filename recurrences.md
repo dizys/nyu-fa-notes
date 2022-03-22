@@ -83,16 +83,18 @@ $$T(n) = 2T(n/2) + n$$
 
 4. Stop:
 
-   We can pick $$i = \lceil {lg n} \rceil$$ for stopping, then
-   $$0 < {n\over{2^i}} \le 1$$.
+   We can pick $$i = \lfloor {lg n} \rfloor$$ for stopping, then
+   $$0 < {n\over{2^i}} \le 2$$.
 
-   By DIC, choose $$T(n) = 0$$ for all $$n \le 1$$.
+   By DIC, choose $$T(n) = 0$$ for all $$n \le 2$$.
 
    Therefore, for $$n > 1$$,
 
-   $$T(n) = \lceil {lg n} \rceil n$$
+   $$T(n) = \lfloor {lg n} \rfloor n$$
 
 ### Basic Sums
+
+
 
 ## Master Theorem
 
