@@ -374,6 +374,12 @@ $$
 
 ## Master Theorem
 
+{% hint style="info" %}
+
+Related homework questions: h2-Q8
+
+{% endhint %}
+
 **Master recurrence:**
 
 $$
@@ -407,6 +413,8 @@ T(n) = \Theta
 \end{cases}
 \end{gather*}
 $$
+
+### Extended Master Theorem
 
 ## Multi-term Master Recurrences
 
