@@ -155,6 +155,20 @@ $$k > 0$$ such that:
 
 $$f(x) \le f(x - k) / C\ (ev.)$$
 
+#### Lemma 8: Closed Properties
+
+(a) **Polynomial-type** functions are closed under addition, multiplication, and
+raising to any positive power $$a > 0$$.
+
+(b) **Exponential-type** functions $$f$$ are closed under addition,
+multiplication, and raising to any power $$a$$. In case $$a > 0$$, the function
+$$f^a$$ will not change its subtype (increasing or decreasing). In case
+$$a < 0$$, the function $$f^a$$ will change its subtype.
+
+(c) If $$f$$ is polynomial-type and $$lg f$$ is non-decreasing then $$lg f$$ is
+also polynomial-type. If $$f$$ is exponential-type and $$a > 1$$ then so is
+$$a ^ f$$.
+
 ### Summation Rules by Growth Type
 
 {% hint style="info" %}
