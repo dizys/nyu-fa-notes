@@ -237,3 +237,37 @@ called **external nodes**.
 Leaves: $$(a', b')$$ where $$1 \le a' \le b'$$.
 
 Default assumption for leaves: $$a' = b' = 1$$.
+
+#### Reorganization of nodes
+
+For an internal node $$u$$,
+
+- $$u$$ is **overfull** if its degree is $$b+1$$.
+- $$u$$ is **underfull** if its degree is $$a-1$$.
+
+**Simple Remedy**: borrow or donate children
+
+![Figure 36: Borrowing or donating as simple remedy](.gitbook/assets/a-b-search-tree-borrow-and-donate.png)
+
+**Strong Remedy**: when simple remedy fails.
+
+- Split an overfull node
+
+  ![Figure 35: Splitting an overfull node](.gitbook/assets/a-b-search-tree-split.png)
+
+- Merge an underfull node
+
+  ![Figure 37: Merging an underfull node](.gitbook/assets/a-b-search-tree-merge.png)
+
+#### Split-Merge Inequality
+
+$$
+\begin{gather*}
+a \le {{b + 1} \over {2}}
+\end{gather*}
+$$
+
+This is a combination of split inequality
+($$a \le \lfloor{{b+1}\over{2}}\rfloor$$) and merge inequality
+($$a \le {{b + 1} \over {2}}$$). Since $$a$$ and $$b$$ are integers, these two
+are equivalent.
