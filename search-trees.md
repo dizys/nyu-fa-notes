@@ -87,4 +87,18 @@ situation is illustrated below:
 
 #### Insertion Rebalancing
 
-Assume the previous heights
+CASE (I.a): $$h_L = h$$ and $$h_R = h - 1$$. This means that the inserted node
+is in the left subtree of $$v$$. In this case, we rotate $$v$$, the result would
+be balanced. Moreover, the height of $$u$$ is now $$h+1$$. We call this the
+"single-rotation" case.
+
+![Figure 17: AVL Insertion: CASE (I.a)](.gitbook/assets/avl-insertion-case-i-a.png)
+
+CASE (I.b): $$h_L = h - 1$$ and $$h_R = h$$. This means that the inserted node
+is in the right subtree of $$v$$. In this case, let us expand the subtree $$D$$
+and let $$w$$ be its root. The two children of $$w$$ will have heights
+$$h - \delta$$ and $$h - \delta'$$ where $$\delta, \delta' \in \{1, 2\}$$. Now a
+double-rotation at $$w$$ results in a balanced tree of height $$h+1$$ rooted at
+$$w$$.
+
+![Figure 17: AVL Insertion: CASE (I.b)](.gitbook/assets/avl-insertion-case-i-b.png)
