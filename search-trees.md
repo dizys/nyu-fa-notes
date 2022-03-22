@@ -149,8 +149,8 @@ $$
 \begin{gather*}
 esize(u) =
 \begin{cases}
-  1 & \text{if} u = nil \\
-  esize(u.left) + esize(u.right) & \text{if} u \neq nil
+  1 & \text{if } u = nil \\
+  esize(u.left) + esize(u.right) & \text{if } u \neq nil
 \end{cases}
 \end{gather*}
 $$
@@ -170,3 +170,40 @@ $$
 \rho < ratio(u) < 1/\rho
 \end{gather*}
 $$
+
+### Insertion and Deletion Algorithms
+
+Example: $$\rho = 1/3$$
+
+**UPDATE PHASE**: Insert or delete as we would in a binary search tree. In
+insertion, this results in a new leaf $$x$$ in $$T$$. If deletion, we will
+physically "cut" the leaf $$x$$ from $$T$$.
+
+**REBALANCE PHASE**: Let $$u$$ be the parent of $$x$$. Clearly, every node that
+is not RB balanced must lie on the root-path of $$u$$. We therefore move up this
+path, rebalancing any such node.
+
+```pseudocode
+Rebalance(u)
+  While (u != u.parent)
+    u <- Rebalance-Step(u)
+    u <- u.parent
+```
+
+```pseudocode
+Rebalance-Step(u)
+  If (ratio(u) >= 3)
+    v <- u.left
+    If (ratio(v) >= 3/5)
+      Return(rotate(v))
+    Else \\ ratio(v) < 3/5
+      Return(double-rotate(v.right))
+  elif (ratio(u) <= 1/3)
+    v <- u.right
+    If (ratio(v) <= 3/5)
+      Return(rotate(v))
+    Else \\ ratio(v) > 3/5
+      Return(double-rotate(v.left))
+  else
+    Return(u)
+```
