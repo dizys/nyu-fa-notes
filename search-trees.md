@@ -228,6 +228,8 @@ constraints:
 
 ### (a,b)-search trees
 
+> Lecture Note 3, Page 80.
+
 An (a,b)-search tree is an (a,b)-tree whose nodes are organized as an **external
 search tree**, which means items are only stored in leaves. Leaves are also
 called **external nodes**.
