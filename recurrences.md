@@ -30,6 +30,12 @@ $$G(n, x) = n + 2x$$
 
 ## Rote Method
 
+{% hint style="info" %}
+
+Related homework questions: h2-Q7
+
+{% endhint %}
+
 ### Basic Sums
 
 ## Master Theorem
