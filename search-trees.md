@@ -135,7 +135,7 @@ rebalancing process.
 
 ![Figure 20: AVL Deletion: CASE (D.c) rotate(v)](.gitbook/assets/avl-deletion-case-d-c.png)
 
-## Ratio Balanced Trees
+## Ratio/Weight Balanced Trees
 
 {% hint style="info" %}
 
@@ -215,3 +215,25 @@ Rebalance-Step(u)
 Related homework questions: h4-1, h4-2
 
 {% endhint %}
+
+An (a,b)-tree is a rooted, ordered tree with the following structural
+constraints:
+
+- Depth property: All leaves are at the same depth.
+- Degree bound: Let $$m$$ be the number of children of an internal node $$u$$.
+  This is also known as the **degree** of $$u$$. In general, we have the bounds
+  $$a \le m \le b$$.
+
+  The root is an exception, with the bound $$2 \le m \le b$$.
+
+### (a,b)-search trees
+
+An (a,b)-search tree is an (a,b)-tree whose nodes are organized as an **external
+search tree**, which means items are only stored in leaves. Leaves are also
+called **external nodes**.
+
+![Figure 35: Organization of external and internal nodes in (a,b)-search trees](.gitbook/assets/a-b-search-tree-organization.png)
+
+Leaves: $$(a', b')$$ where $$1 \le a' \le b'$$.
+
+Default assumption for leaves: $$a' = b' = 1$$.
