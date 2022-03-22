@@ -34,11 +34,19 @@ $$
 
 **Merge sort** complexity:
 
-$$T(n) = n + 2T(n/2)$$
+$$
+\begin{gather*}
+T(n) = n + 2T(n/2)
+\end{gather*}
+$$
 
 For this, we have $$k=1, n_1=n/2$$
 
-$$G(n, x) = n + 2x$$
+$$
+\begin{gather*}
+G(n, x) = n + 2x
+\end{gather*}
+$$
 
 ## Rote Method
 
@@ -71,7 +79,11 @@ $$T(n) = 2T(n/2) + n$$
 
 2. Guess:
 
-   $$ T(n) = 2^i T({n\over{2^i}}) + i n$$
+   $$
+   \begin{gather*}
+   T(n) = 2^i T({n\over{2^i}}) + i n
+   \end{gather*}
+   $$
 
 3. Verify: (use natural induction)
 
@@ -102,7 +114,11 @@ $$T(n) = 2T(n/2) + n$$
 
    Therefore, for $$n > 1$$,
 
-   $$T(n) = \lfloor {lg n} \rfloor n$$
+   $$
+   \begin{gather*}
+   T(n) = \lfloor {lg n} \rfloor n
+   \end{gather*}
+   $$
 
 ### Basic Sums
 
@@ -110,7 +126,11 @@ Other kinds of sums are often reduces to the following forms.
 
 #### Arithmetic Sums
 
-$$S^k_n := \sum^n_{i=1}{i^k}$$
+$$
+\begin{gather*}
+S^k_n := \sum^n_{i=1}{i^k}
+\end{gather*}
+$$
 
 Solution: $$S^k_n = \Theta(n^{k+1})$$
 
@@ -118,7 +138,11 @@ Solution: $$S^k_n = \Theta(n^{k+1})$$
 
 When $$x \ne 1$$,
 
-$$S_n(x) := \sum^{n-1}_{i=0}{x^i}$$
+$$
+\begin{gather*}
+S_n(x) := \sum^{n-1}_{i=0}{x^i}
+\end{gather*}
+$$
 
 Solution: $$S_\infty = {{x^n - 1}\over{x - 1}}$$
 
@@ -126,13 +150,21 @@ Solution: $$S_\infty = {{x^n - 1}\over{x - 1}}$$
 
 When $$\lvert{x}\rvert < 1$$,
 
-$$S_{\infty}(x) := \sum^{\infty}_{i=0}{x^i}$$
+$$
+\begin{gather*}
+S_{\infty}(x) := \sum^{\infty}_{i=0}{x^i}
+\end{gather*}
+$$
 
 Solution: $$S_{\infty}={1\over{1 - x}}$$
 
 #### Harmonic Series
 
-$$H_n := 1 + {1\over{2}} + {1\over{3}} + \dots + {1\over{n}}$$
+$$
+\begin{gather*}
+H_n := 1 + {1\over{2}} + {1\over{3}} + \dots + {1\over{n}}
+\end{gather*}
+$$
 
 Solution: $$H_n = ln(n) + g(n)$$ where $$0 < g(n) < 1$$.
 
@@ -151,21 +183,33 @@ Related homework questions: h3-Q1
 A real function $$f$$ is **polynomial-type** if $$f$$ is non-decreasing (ev.)
 and there is some $$C > 1$$ such that:
 
-$$f(x) \le C f(x/2)\ (ev.)$$
+$$
+\begin{gather*}
+f(x) \le C f(x/2)\ (ev.)
+\end{gather*}
+$$
 
 #### Increasing Exponential Type
 
 $$f$$ increases exponentially if there exists real numbers $$C > 1$$ and
 $$k > 0$$ such that:
 
-$$f(x) \ge C f(x - k)\ (ev.)$$
+$$
+\begin{gather*}
+f(x) \ge C f(x - k)\ (ev.)
+\end{gather*}
+$$
 
 #### Decreasing Exponential Type
 
 $$f$$ decreases exponentially if there exists real numbers $$C > 1$$ and
 $$k > 0$$ such that:
 
-$$f(x) \le f(x - k) / C\ (ev.)$$
+$$
+\begin{gather*}
+f(x) \le f(x - k) / C\ (ev.)
+\end{gather*}
+$$
 
 #### Lemma 8: Closed Properties
 
