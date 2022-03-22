@@ -81,6 +81,17 @@ $$T(n) = 2T(n/2) + n$$
    Combining the base case and the inductive step we verified that $$ T(n) = 2^i
    T({n\over{2^i}}) + i n$$.
 
+4. Stop:
+
+   We can pick $$i = \lceil {lg n} \rceil$$ for stopping, then
+   $$0 < {n\over{2^i}} \le 1$$.
+
+   By DIC, choose $$T(n) = 0$$ for all $$n \le 1$$.
+
+   Therefore, for $$n > 1$$,
+
+   $$T(n) = \lceil {lg n} \rceil n$$
+
 ### Basic Sums
 
 ## Master Theorem
