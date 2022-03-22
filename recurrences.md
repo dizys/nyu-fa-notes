@@ -264,7 +264,65 @@ Examples:
   \sum^n_{i\ge{1}}{b^{-i}} = \Theta(1)(b\ge{0}), \sum^n_{i\ge{1}}{i^2 i^{-i}} = \Theta(1), \sum^n_{i\ge{1}}{i^{-i}} = \Theta(1).
   $$
 
+![More Examples](.gitbook/assets/summation-rules-examples.png)
+
 ## Transformation Techniques
+
+### Domain Transformation
+
+{% hint style="info" %}
+
+Related homework questions: h3-Q3
+
+{% endhint %}
+
+Example:
+
+Consider:
+
+$$
+\begin{gather*}
+T(N) = T(N/2) + N
+\end{gather*}
+$$
+
+We define $$t(n) := T(2^n) \text{or} N = 2^n$$.
+
+This transforms the original N-domain into the n-domain:
+
+$$
+\begin{align*}
+T(2^n) &= T(2^n/2) + 2^n \\
+T(2^n) &= T(2^{n-1}) + 2^n \\
+t(n) &= t(n-1) + 2^n
+\end{align*}
+$$
+
+We get this standard form. By DIC, we choose the boundary condition $$t(n) = 0$$
+for all $$n \le 0$$.
+
+We get sum:
+
+$$
+\begin{gather*}
+t(n) = \sum^n_{i\ge{0}}{2^n}=\Theta(2^n)
+\end{gather*}
+$$
+
+Because we have $$n = lgN$$,
+
+$$
+\begin{gather*}
+T(N) = \Theta(N)
+\end{gather*}
+$$
+
+{% hint style="info" %}
+
+On Lecture II Page 46, L1120, we get the exact sum by transforming the
+descending sum to the ascending sum.
+
+{% endhint %}
 
 ## Master Theorem
 
