@@ -458,4 +458,19 @@ $$
 
 It clearly exists and is unique.
 
+### Multi-term Master Theorem
+
+Theorem 15: Multi-term Master Theorem on Lecture II Page 62, L1483
+
+$$
+\begin{gather*}
+T(n) = \Theta
+\begin{cases}
+  n^{\alpha}, & \text{if } d(n) = O(n^{w-\epsilon}) \text{ for some } \epsilon > 0, & CASE(-) \\
+  n^w, & \text{if } d(n) = \Theta(n^w), & CASE(0) \\
+  d(n), & \text{if } \sum^k_{i=1}{a_i\cdot d(n/{b_i})} \le c\cdot d(n), & CASE(+) \\
+\end{cases}
+\end{gather*}
+$$
+
 ## Real Induction
