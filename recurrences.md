@@ -399,6 +399,9 @@ $$w = log_b(a)$$
 
 $$W(n) = n^w = n^{log_b(a)}$$
 
+> Useful link:
+> [Online basic master theorem solver](https://www.nayuki.io/page/master-theorem-solver-javascript)
+
 ### Master Theorem
 
 Theorem 10: Master Theorem on Lecture II Page 51, L1207
@@ -474,3 +477,9 @@ T(n) = \Theta
 $$
 
 ## Real Induction
+
+{% hint style="info" %}
+
+Related homework questions: h2-Q9
+
+{% endhint %}
