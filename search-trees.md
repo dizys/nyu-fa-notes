@@ -2,6 +2,12 @@
 
 ## Binary Search Trees (BST)
 
+{% hint style="info" %}
+
+Related homework questions: h3-6
+
+{% endhint %}
+
 ### Binary Tree
 
 A binary tree $$T$$ is a set $$N$$ of nodes where each node $$u_0$$ has two
@@ -55,6 +61,12 @@ u_L.key < u.key \le u_R.key
 $$
 
 ## AVL Trees
+
+{% hint style="info" %}
+
+Related homework questions: h3-7, h3-8
+
+{% endhint %}
 
 An AVL tree is a binary search tree where the left subtree and right subtree at
 each node differ by at most 1 in height.
@@ -122,3 +134,39 @@ of $$u$$ which has height $$h+2$$ originally, we can safely terminate the
 rebalancing process.
 
 ![Figure 20: AVL Deletion: CASE (D.c) rotate(v)](.gitbook/assets/avl-deletion-case-d-c.png)
+
+## Ratio Balanced Trees
+
+{% hint style="info" %}
+
+Related homework questions: h4-3
+
+{% endhint %}
+
+**Extended size**:
+
+$$
+\begin{gather*}
+esize(u) =
+\begin{cases}
+  1 & \text{if} u = nil \\
+  esize(u.left) + esize(u.right) & \text{if} u \neq nil
+\end{cases}
+\end{gather*}
+$$
+
+**Ratio**:
+
+$$
+\begin{gather*}
+ratio(u) := {esize(u.left) \over {esize(u.right)}}
+\end{gather*}
+$$
+
+### ρ-ratio
+
+$$
+\begin{gather*}
+\rho < ratio(u) < 1/\rho
+\end{gather*}
+$$
