@@ -78,3 +78,13 @@ $$
 just cut during deletion, in the UPDATE PHASE. THe path from $$x$$ to the root
 will be called the **rebalance path**. We now move up this path, rebalancing
 nodes along this path as necessary.
+
+Let $$u$$ be the first unbalanced node we encounter along the rebalance path
+from bottom to top. It is clear that $$u$$ has a balance of $$\pm 2$$. The
+situation is illustrated below:
+
+![Figure 16: Node u is unbalanced after insertion or deletion](.gitbook/assets/avl-situation.png)
+
+#### Insertion Rebalancing
+
+Assume the previous heights
