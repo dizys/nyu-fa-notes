@@ -45,13 +45,13 @@ Example: $$T(n/2) = 2T(n/4) + n/2$$
 Expand:
 
 $$
-\begin{aligned}
+\begin{align}
 T(n/2) = 2T(n/4) + (n/2) \\
 = 2 (2 T(n/4) + (n/2)) + n \\
 = 4 T(n/4) + 2n \\
 = 4 (2T(n/8) + (n/4)) + 2n \\
 = 8T(n/8) + 3n \\
-\end{aligned}
+\end{align}
 $$
 
 ### Basic Sums
