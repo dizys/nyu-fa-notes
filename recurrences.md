@@ -397,7 +397,7 @@ $$w = log_b(a)$$
 
 **Watershed function**
 
-$$f_w = n^w = n^{log_b(a)}$$
+$$W(n) = n^w = n^{log_b(a)}$$
 
 ### Master Theorem
 
@@ -407,7 +407,7 @@ $$
 \begin{gather*}
 T(n) = \Theta
 \begin{cases}
-  n^w, & \text{if } d(n) = O(n^{w-\epsilon}), \text{ for some } \epsilon > 0 & CASE(-) \\
+  n^w, & \text{if } d(n) = O(n^{w-\epsilon}) \text{ for some } \epsilon > 0, & CASE(-) \\
   n^w log(n), & \text{if } d(n) = \Theta(n^w), & CASE(0) \\
   d(n), & \text{if } a\cdot d(n/b) \le c\cdot d(n) \text{ for some } 0 < c < 1. & CASE(+) \\
 \end{cases}
@@ -415,6 +415,20 @@ T(n) = \Theta
 $$
 
 ### Extended Master Theorem
+
+Theorem 12: Extended Master Theorem on Lecture II Page 54, L1282
+
+$$
+\begin{gather*}
+T(n) = \Theta
+\begin{cases}
+  d(n), & \text{if } a\cdot d(n/b) \le c\cdot d(n) \text{ for some } 0 < c < 1. & CASE(+) \\
+  W(n)loglogn, & \text{if } d(n) = \Theta(W(n)log^c(n)) \text{ for } c = -1, & CASE(1) \\
+  W(n)log^{c+1}(n), & \text{if } d(n) = \Theta(W(n)log^c(n)) \text{ for } c > -1, & CASE(0) \\
+  W(n), & \text{if } d(n) = O(W(n)log^c(n)) \text{ for } c < -1. & CASE(-) \\
+\end{cases}
+\end{gather*}
+$$
 
 ## Multi-term Master Recurrences
 
