@@ -3,3 +3,4 @@
 * [Overview](README.md)
 * [Introduction](introduction.md)
 * [Recurrences](recurrences.md)
+* [Search Trees](search-trees.md)
