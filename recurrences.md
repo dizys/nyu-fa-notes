@@ -18,11 +18,15 @@ $$F(n) = F(n-1) + F(n-2)$$
 
 For this, we have $$k=2, n_1=n-1, n_2=n-2$$
 
+$$G(n, x, y) = x + y$$
+
 **Merge sort** complexity:
 
 $$T(n) = n + 2T(n/2)$$
 
 For this, we have $$k=1, n_1=n/2$$
+
+$$G(n, x) = n + 2x$$
 
 ## Rote Method
 
@@ -41,3 +45,16 @@ For this, we have $$k=1, n_1=n/2$$
 ## Real Induction
 
 ## Multi-term Master Recurrences
+
+$$
+
+
+$$
+
+$$
+
+
+$$
+
+$$
+$$
