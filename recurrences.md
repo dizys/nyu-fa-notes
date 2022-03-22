@@ -177,6 +177,17 @@ Related homework questions: h3-Q2
 
 {% endhint %}
 
+Theorem 6:
+
+$$
+S_f(n) = \Theta
+\begin{cases}
+  n f(n)\ \text{if f is polynomial-type,} \\
+  f(n)\ \text{if f is increasing exponentially,} \\
+  1 \ \text{if f is decreasing exponentially.}
+\end{cases}
+$$
+
 ## Transformation Techniques
 
 ## Master Theorem
