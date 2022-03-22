@@ -432,12 +432,24 @@ $$
 
 ## Multi-term Master Recurrences
 
+$$
+\begin{gather*}
+T(n) = d(n) + \sum_{i=1}^{k}{a_i T(n/b_i)}
+\end{gather*}
+$$
+
+where $$a_i > 0$$ and $$b_1 > b_2 > \cdots > b_k > 1$$ are real constants.
+
+**Watershed constant**
+
+It is the real number $$\alpha$$ such that:
+
+$$
+\begin{align*}
+1 = \sum_{i=1}^{k}{a_i\over{b_i^{\alpha}}}
+\end{align*}
+$$
+
+It clearly exists and is unique.
+
 ## Real Induction
-
-$$
-
-
-$$
-
-$$
-$$
