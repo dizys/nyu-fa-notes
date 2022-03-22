@@ -7,7 +7,11 @@ description: >-
 
 Separable form for recurrence relation:
 
-$$T(n) = G(n, T(n_1), ..., T(n_k))$$
+$$
+\begin{gather*}
+T(n) = G(n, T(n_1), ..., T(n_k))
+\end{gather*}
+$$
 
 where $$G(x_0, x_1, ..., x_k)$$ is a function in $$k+1$$ variables and each
 $$n_i (i=1,...,k)$$ is a function of $$n$$ that is strictly less than $$n$$.
@@ -22,7 +26,11 @@ $$
 
 For this, we have $$k=2, n_1=n-1, n_2=n-2$$
 
-$$G(n, x, y) = x + y$$
+$$
+\begin{gather*}
+G(n, x, y) = x + y
+\end{gather*}
+$$
 
 **Merge sort** complexity:
 
