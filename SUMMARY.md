@@ -5,4 +5,5 @@
 * [Recurrences](recurrences.md)
 * [Search Trees](search-trees.md)
 * [Dynamic Programming](dynamic-programming.md)
+* [Shortest Paths](shortest-paths.md)
 * [NP Complete](np-complete.md)
