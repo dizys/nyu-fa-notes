@@ -4,7 +4,9 @@
 
 When A is polynomial-reducible to B, we denote this relationship as:
 
-$$A \leqslant^P B$$
+$$
+A \leqslant^P B
+$$
 
 To prove this relationship, we need:
 
